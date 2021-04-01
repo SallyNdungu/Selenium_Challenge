@@ -8,4 +8,3 @@ driver.get("https://www.xeneta.com/demo")
 
 print(driver.title)  #title of the page
 
-driver.close()
