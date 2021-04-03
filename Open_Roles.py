@@ -24,3 +24,10 @@ time.sleep(25)
 #Apply link
 VP_Product_Apply_Here = driver.find_element_by_xpath("/html/body/div[3]/div/div[3]/div/div/span/div[3]/div/div/div/div/div/div[2]/div/div[2]/div[1]/p[39]/a").click()
 time.sleep(15)
+#Prints the title of the loaded page
+print(driver.title)
+
+if driver.title == "Careers":
+    print("Test Passed")
+else:
+    print("Test Failed")

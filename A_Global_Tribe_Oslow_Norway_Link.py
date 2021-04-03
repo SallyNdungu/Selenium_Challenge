@@ -16,4 +16,12 @@ time.sleep(20)
 oslow_norway_link = driver.find_element_by_xpath("/html/body/div[3]/div/div[3]/div/div/span/div[2]/div/div/div/div/div[2]/span/div[1]/div/div/div/a[2]").click()
 time.sleep(30)
 
+#Prints the title of the loaded page
+print(driver.title)
+
+if driver.title == "Oslo Careers":
+    print("Test Passed")
+else:
+    print("Test Failed")
+
 driver.quit()

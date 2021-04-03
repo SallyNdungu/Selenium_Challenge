@@ -15,5 +15,14 @@ time.sleep(5)
 #click on the Watch now link
 watch_now = driver.find_element_by_id("cta_button_1816946_180bbc25-62fd-4a6b-8e02-5c22aba5c82f").click()
 time.sleep(10)
+
+#Prints the title of the loaded page
+print(driver.title)
+
+if driver.title == "Watch Xeneta Videos":
+    print("Test Passed")
+else:
+    print("Test Failed")
+
 #Close the open browser
 driver.quit()

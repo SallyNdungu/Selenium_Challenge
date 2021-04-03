@@ -15,6 +15,16 @@ time.sleep(10)
 #click on the Schedule now link
 schedule_now = driver.find_element_by_xpath("/html/body/div[5]/div/div[2]/div/div/div/div/div/div/div/div/span/div[2]/div/div/p[2]/span/span/span/a").click()
 time.sleep(10)
+
+#Prints the title of the loaded page
+print(driver.title)
+if driver.title == "Schedule 1:1 Demo":
+    print("Test Passed")
+else:
+    print("Test Failed")
+
+
+
 #Close the open browser
 driver.quit()
 

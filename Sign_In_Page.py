@@ -11,5 +11,14 @@ print(driver.title)  #title of the page
 time.sleep(5)
 #click on the sign in button
 sign_in = driver.find_element_by_xpath("/html/body/div[2]/div/div/div/div/div/div[1]/div/div/div[1]/div/div/div/div/div[2]/div/span/div[2]/ul/li[5]/a").click()
+time.sleep(10)
+#Prints the title of the loaded page
+print(driver.title)
+
+if driver.title == "Xeneta":
+    print("Test Passed")
+else:
+    print("Test Failed")
+
 #exit the open pop-up
 driver.quit()

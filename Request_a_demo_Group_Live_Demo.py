@@ -15,5 +15,14 @@ time.sleep(5)
 #click on the Group Live Demo link
 live_demo = driver.find_element_by_id("cta_button_1816946_2b2944d5-4dbd-437d-9654-65d8de7d141f").click()
 time.sleep(10)
+
+#Prints the title of the loaded page
+print(driver.title)
+
+if driver.title == "Sign Up for Live Group Demo with Xeneta":
+    print("Test Passed")
+else:
+    print("Test Failed")
+
 #Close the open browser
 driver.quit()

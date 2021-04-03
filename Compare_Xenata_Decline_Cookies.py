@@ -14,5 +14,14 @@ compare_Xenata_Decline_Cookies = driver.find_element_by_css_selector("#hs-eu-dec
 #Navigate to compare Xenata link at the bottom of the page
 compare_Xenata = driver.find_element_by_xpath("/html/body/div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div/div[3]/div[2]/div/div/div/span/div/ul/li[2]/a").click()
 time.sleep(10)
+
+#Prints the title of the loaded page
+print(driver.title)
+
+if driver.title == "Xeneta Products - Benchmark Container Freight Rates":
+    print("Test Passed")
+else:
+    print("Test Failed")
+
 #Close the open browser
 driver.quit()
