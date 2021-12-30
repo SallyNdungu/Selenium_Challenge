@@ -5,8 +5,7 @@ Xenata Automation Challenge
 **Motivation**
 
 The reason behind doing this challenge was 
-1. Improve my chance of getting the job
-2. Showing and proving to myself I am able to automate tests, that I can do it (and I did)
+Show and prove to myself I am able to automate tests, that I can do it (and I did)
 
 **How I prioritized what to automate:**
 
